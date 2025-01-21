@@ -20,3 +20,13 @@ final class AuthFailureState extends AuthState {
 
   const AuthFailureState(this.message);
 }
+
+final class AppUserLoggedInState extends AuthState {
+  final User user;
+  const AppUserLoggedInState(this.user);
+}
+
+final class AppUserSignedInState extends AuthState {
+  final User user;
+  const AppUserSignedInState(this.user);
+}

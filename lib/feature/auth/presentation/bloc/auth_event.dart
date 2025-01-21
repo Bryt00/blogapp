@@ -17,3 +17,10 @@ final class AuthSignInEvent extends AuthEvent {
   final String password;
   AuthSignInEvent({required this.email, required this.password});
 }
+
+final class AuthCurrentUser extends AuthEvent {}
+
+final class AppUserSignedInEvent extends AuthEvent {
+  final User user;
+  AppUserSignedInEvent(this.user);
+}

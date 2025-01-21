@@ -12,6 +12,7 @@ class AppTheme {
   static final darkTheme = ThemeData.dark().copyWith(
     scaffoldBackgroundColor: AppPallete.backgroundColor,
     appBarTheme: AppBarTheme(
+      centerTitle: true,
       backgroundColor: AppPallete.backgroundColor,
     ),
     inputDecorationTheme: InputDecorationTheme(
